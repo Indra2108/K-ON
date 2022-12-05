@@ -2,8 +2,44 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "src/assets/fonts/Mplus1-Black.ttf",
+      "sha1": "38d77ccd93ae40177734b62788c86da0064276b4"
+    },
+    {
+      "path": "src/assets/fonts/Mplus1-Bold.ttf",
+      "sha1": "9591d7db6d774fb6e24b50204e7367315ed91364"
+    },
+    {
+      "path": "src/assets/fonts/Mplus1-ExtraBold.ttf",
+      "sha1": "f4f60c96652ec593416b42fc0bb12feefaed146d"
+    },
+    {
+      "path": "src/assets/fonts/Mplus1-ExtraLight.ttf",
+      "sha1": "151a8c30de70a4e0bb5617bbab440f957ca02fe3"
+    },
+    {
+      "path": "src/assets/fonts/Mplus1-Light.ttf",
+      "sha1": "919cee0b97d12504f4b13bad8fc8b867a809a98b"
+    },
+    {
+      "path": "src/assets/fonts/Mplus1-Medium.ttf",
+      "sha1": "3f59c4c6a75d506f3f70732a42f93678e97bce39"
+    },
+    {
+      "path": "src/assets/fonts/Mplus1-Regular.ttf",
+      "sha1": "8443f4a36c415c3a11ff12f3a1a8379874f32fff"
+    },
+    {
+      "path": "src/assets/fonts/Mplus1-SemiBold.ttf",
+      "sha1": "a7926cf927e6ebfaa5a8880cef53c0dfa5d36106"
+    },
+    {
+      "path": "src/assets/fonts/Mplus1-Thin.ttf",
+      "sha1": "37936917a68d14c684c63a0284e6145c5c78acd5"
+    },
+    {
       "path": "src/assets/fonts/OFL.txt",
-      "sha1": "41d2e2210707992838e3e956f4ab6a9dc1805686"
+      "sha1": "075f5162e8d25244a5fe8efad0b8832302154ea6"
     },
     {
       "path": "src/assets/fonts/OpenSans-Bold.ttf",

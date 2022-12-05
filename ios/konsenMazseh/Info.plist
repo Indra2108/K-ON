@@ -65,6 +65,15 @@
 		<string>OpenSans-Regular.ttf</string>
 		<string>OpenSans-SemiBold.ttf</string>
 		<string>OpenSans-SemiBoldItalic.ttf</string>
+		<string>Mplus1-Black.ttf</string>
+		<string>Mplus1-Bold.ttf</string>
+		<string>Mplus1-ExtraBold.ttf</string>
+		<string>Mplus1-ExtraLight.ttf</string>
+		<string>Mplus1-Light.ttf</string>
+		<string>Mplus1-Medium.ttf</string>
+		<string>Mplus1-Regular.ttf</string>
+		<string>Mplus1-SemiBold.ttf</string>
+		<string>Mplus1-Thin.ttf</string>
 	</array>
 </dict>
 </plist>
