@@ -11,7 +11,7 @@ function MainScreen() {
         <View style={styles.container}>
             <StatusBar barStyle='dark-content' backgroundColor='#fbfaf5' />
 
-            <TopHeader name='gear' color='black'/>
+            <TopHeader name='gear' color='black' navigateTo='SettingScreen' />
 
             <MainHeader title='Exercises.' desc="Practice daily or when you can't concentrate and you will see improvement very soon." />
 
