@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, View, FlatList } from 'react-native';
 
-import MainHeader from "../../component/header";
-import ListGames from "../../component/games_list";
+import MainHeader from "../../components/header";
+import ListGames from "../../components/games_list";
 import list_games from "../../assets/data/list_games";
 
 function MainScreen() {
