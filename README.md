@@ -1,6 +1,10 @@
-# Konsen-Maszeh
-A brain training app clone from [nixGames's Consetration training](https://play.google.com/store/apps/details?id=com.nixgames.concentration&hl=en&gl=US)
+# Konsentrasi
+A brain training app clone from [nixGames's Consentration training](https://play.google.com/store/apps/details?id=com.nixgames.concentration&hl=en&gl=US)
 
 ### Todo(s)
 - [ ] Add more games
-- [ ] Dark Mode
+- [ ] Add Settings screen
+  - [ ] Unlock all games
+  - [ ] Change Theme: Dark & Light Mode
+  - [ ] Change level length
+  - [ ] About screen
