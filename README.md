@@ -1,5 +1,7 @@
-# Konsentrasi
-A brain training app clone from [nixGames's Consentration training](https://play.google.com/store/apps/details?id=com.nixgames.concentration&hl=en&gl=US)
+# K-ON
+> *'K' stands for 'Konsentrasi' (Consentration in english). K-ON = Konsentrasi On*
+
+A brain training app clone based from [nixGames's Consentration training](https://play.google.com/store/apps/details?id=com.nixgames.concentration&hl=en&gl=US)
 
 ### Todo(s)
 - [ ] Add more games
