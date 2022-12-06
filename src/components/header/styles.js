@@ -2,9 +2,7 @@ import { StyleSheet } from "react-native"
 
 export default StyleSheet.create({
     container: {
-        paddingVertical: '3%',
-        // paddingHorizontal: '2%',
-        // borderWidth: 1
+        marginBottom: '3%',
     },
     title: {
         fontFamily: "Mplus1-ExtraBold",
