@@ -1,9 +1,11 @@
 import React from "react";
 
-import MainScreen from "./screens/main";
+import Router from "./router";
 
 function App() {
-  return <MainScreen />
+  return (
+    <Router />
+  )
 }
 
 export default App;
