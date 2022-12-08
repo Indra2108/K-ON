@@ -3,7 +3,7 @@ import { StyleSheet, View, FlatList, StatusBar } from 'react-native';
 
 import TopHeader from "../../components/topHeader";
 import MainHeader from "../../components/header";
-import ListGames from "../../components/games_list";
+import ListGames from "../../components/listGames";
 import list_games from "../../assets/data/list_games";
 
 function MainScreen() {
