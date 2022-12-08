@@ -1,13 +1,42 @@
-import React from "react";
-import { View, Text, StyleSheet } from 'react-native';
+import React, { useState } from "react";
+import { View, Text } from 'react-native';
 
 import Icon from "react-native-vector-icons/EvilIcons";
+import Toast from 'react-native-toast-message';
 
 import styles from "./styles";
 
 const ListSettings = (props) => {
+    const [seconds, setSeconds] = useState(50)
+
+    const levelLengthHandler = (action) => {
+        switch (action) {
+            case 'plus':
+                if (seconds >= 300) {
+                    Toast.show({
+                        text1: 'Maximum round length is 5 minutes.',
+                    });
+                } else {
+                    setSeconds(seconds + 10)
+                }
+                break;
+            case 'minus':
+                if (seconds <= 50) {
+                    Toast.show({
+                        text1: 'Minimum round length is 50 seconds.',
+                    });
+                } else {
+                    setSeconds(seconds - 10)
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
     return (
         <View style={styles.container}>
+
             {
                 props.isLevelLength ?
 
@@ -18,9 +47,9 @@ const ListSettings = (props) => {
                         </View>
 
                         <View style={styles.containerLevelLength2}>
-                            <Icon name="minus" color={'black'} size={40} />
-                            <Text style={styles.textLevelLength}> {50}s </Text>
-                            <Icon name="plus" color={'black'} size={40} />
+                            <Icon name="chevron-left" color={'black'} size={38} onPress={() => levelLengthHandler('minus')} />
+                            <Text style={styles.textLevelLength}> {seconds}s </Text>
+                            <Icon name="chevron-right" color={'black'} size={38} onPress={() => levelLengthHandler('plus')} />
                         </View>
                     </View>
 
