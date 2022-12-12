@@ -1,16 +1,18 @@
 import React from "react";
-import { StyleSheet, View, FlatList, StatusBar } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
 
-import TopHeader from "../../components/topHeader";
-import MainHeader from "../../components/header";
-import ListGames from "../../components/listGames";
+import SystemNavigationBar from 'react-native-system-navigation-bar';
+
+import { ListGames, MainHeader, TopHeader } from "../../components";
 import list_games from "../../assets/data/list_games";
 
+// useEffect(() => SystemNavigationBar.setNavigationColor('light'), [])
+
 function MainScreen() {
+    SystemNavigationBar.setNavigationColor('#fbfaf5', 'dark');
+
     return (
         <View style={styles.container}>
-            <StatusBar barStyle='dark-content' backgroundColor='#fbfaf5' />
-
             <TopHeader name='gear' color='black' navigateTo='SettingScreen' />
 
             <MainHeader title='Exercises.' desc="Practice daily or when you can't concentrate and you will see improvement very soon." />
