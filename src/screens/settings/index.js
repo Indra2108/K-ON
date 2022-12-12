@@ -3,10 +3,7 @@ import { View, StyleSheet } from 'react-native';
 
 import Toast from 'react-native-toast-message';
 
-import MainHeader from "../../components/header";
-import TopHeader from "../../components/topHeader";
-import ListSettings from "../../components/listSettings";
-import toastConfig from "../../components/toast";
+import { ListSettings, MainHeader, toastConfig, TopHeader } from "../../components";
 
 const SettingScreen = () => {
     return (
