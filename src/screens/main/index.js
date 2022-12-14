@@ -1,25 +1,29 @@
 import React from "react";
-import { StyleSheet, View, FlatList } from 'react-native';
+import { StyleSheet, View, FlatList, StatusBar } from 'react-native';
 
 import SystemNavigationBar from 'react-native-system-navigation-bar';
 
 import { ListGames, MainHeader, TopHeader } from "../../components";
 import list_games from "../../assets/data/list_games";
 
-// useEffect(() => SystemNavigationBar.setNavigationColor('light'), [])
-
 function MainScreen() {
-    SystemNavigationBar.setNavigationColor('#fbfaf5', 'dark');
+    SystemNavigationBar.setNavigationColor('#fbfaf5', 'dark', 'navigation');
 
     return (
         <View style={styles.container}>
-            <TopHeader name='gear' color='black' navigateTo='SettingScreen' />
+            <StatusBar barStyle='dark-content' backgroundColor='#fbfaf5' />
 
-            <MainHeader title='Exercises.' desc="Practice daily or when you can't concentrate and you will see improvement very soon." />
+            <TopHeader name='gear' color='black' navigateTo='SettingScreen' sendNavData={{}} />
+
+            <MainHeader
+                style={{ letterSpacing: -2, fontSize: 38 }}
+                title='Exercises.'
+                desc="Practice daily or when you can't concentrate and you will see improvement very soon."
+            />
 
             <FlatList
                 data={list_games}
-                renderItem={({ item }) => <ListGames id={item.id} title={item.title} desc={item.desc} />}
+                renderItem={({ item }) => <ListGames id={item.id} title={item.title} desc={item.desc} howToPlay={item.howToPlay} />}
                 keyExtractor={item => item.id}
                 showsVerticalScrollIndicator={false}
             />
