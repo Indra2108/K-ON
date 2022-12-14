@@ -10,7 +10,7 @@ const SettingScreen = () => {
         <View style={styles.container}>
             <TopHeader name='close' color='black' navigateTo='MainScreen' />
 
-            <MainHeader title='Settings' />
+            <MainHeader style={{ fontSize: 35 }} title='Settings' />
 
             <ListSettings title='Unlock all games' desc='Unlock all games without collecting stars.' />
 
