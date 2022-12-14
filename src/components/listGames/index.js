@@ -10,7 +10,7 @@ const ListGames = (props) => {
     const navigation = useNavigation()
 
     return (
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('GamesScreen')}>
+        <TouchableWithoutFeedback onPress={() => navigation.navigate('GamesScreen', { title: props.title, desc: props.howToPlay })}>
             <View style={styles.container}>
                 <View style={styles.header}>
                     <Text style={styles.textId}>{props.id}. </Text>
