@@ -6,7 +6,6 @@ export default StyleSheet.create({
     },
     title: {
         fontFamily: "Mplus1-ExtraBold",
-        fontSize: 35,
         color: 'black',
     },
     desc: {
