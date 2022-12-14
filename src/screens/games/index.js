@@ -1,11 +1,16 @@
 import React from "react";
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
+import { useRoute } from "@react-navigation/native";
 
 import { TopHeader, MainHeader } from "../../components";
 
 const GamesScreen = () => {
+    const route = useRoute()
+    const { title, desc } = route.params
+
     return (
-        <View>
+        <View style={styles.container}>
             <TopHeader
                 name='close'
                 color='black'
@@ -13,11 +18,20 @@ const GamesScreen = () => {
             />
 
             <MainHeader
-                title='Larger number'
-                desc='Look at the center point, while choosing a larger number. And try to do it as quickly as possible'
+                style={{ marginTop: '2%', fontSize: 30, }}
+                title={title}
+                desc={desc}
             />
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: '5%',
+        backgroundColor: '#fbfaf5',
+    },
+})
 
 export default GamesScreen;
