@@ -15,6 +15,7 @@ A brain training app clone based from [nixGames's Consentration training](https:
 ### News
 ---
 - `2022`
+  - `Dec 20` - Officially rename project to 'K-ON'
   - `Dec 01` - Start Project
 
 ### Resources & References
