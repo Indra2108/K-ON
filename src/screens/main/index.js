@@ -16,7 +16,7 @@ function MainScreen() {
             <TopHeader name='gear' color='black' navigateTo='SettingScreen' sendNavData={{}} />
 
             <MainHeader
-                style={{ letterSpacing: -2, fontSize: 38 }}
+                style={{ letterSpacing: -3, fontSize: 38 }}
                 title='Exercises.'
                 desc="Practice daily or when you can't concentrate and you will see improvement very soon."
             />
