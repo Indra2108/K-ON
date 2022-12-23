@@ -155,6 +155,12 @@ const list_games = [
         desc: 'Find all the numbers that have a certain digit.',
         howToPlay: ''
     },
+    {
+        id: 27,
+        title: 'Rock, Paper, Scissors',
+        desc: 'Win against the app the maximum number of times.',
+        howToPlay: ''
+    },
 ]
 
 export default list_games;
