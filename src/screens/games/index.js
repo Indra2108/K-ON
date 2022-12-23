@@ -1,15 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { StyleSheet, View, Text, TouchableWithoutFeedback, } from 'react-native';
 
-import { useRoute } from "@react-navigation/native";
+import { useRoute, useNavigation } from "@react-navigation/native";
 
 import { TopHeader, MainHeader } from "../../components";
 import LargerNumberGame from "../../assets/games_components/01.Larger_Number";
 
 const GamesScreen = () => {
-    const route = useRoute()
-    const { title, desc } = route.params
+    const { title, desc } = useRoute().params
+    const navigation = useNavigation()
     const [startGame, setStartGame] = useState(false)
+    const [time, setTime] = useState(5)
+    const minute = Math.floor(time % 3600 / 60)
+    const second = Math.floor(time % 3600 % 60)
+    const timerRef = useRef(time)
+
+    useEffect(() => {
+        if (startGame) {
+            const timerId = setInterval(() => {
+                timerRef.current -= 1
+                if (timerRef.current < 0) {
+                    clearInterval(timerId)
+                } else {
+                    setTime(timerRef.current)
+                }
+
+                if (timerRef.current < 0) {
+                    navigation.replace('ResultScreen')
+                }
+                console.log('TimeREF: ',timerRef.current);
+                console.log('time: ',time);
+            }, 1000);
+        }
+
+        // return () => clearInterval(timerId)
+    }, [startGame])
 
     return (
         <View style={styles.container}>
@@ -21,10 +46,12 @@ const GamesScreen = () => {
 
             {
                 startGame ?
-
-                    <View style={styles.viewTextStart}>
-                        <LargerNumberGame />
-                    </View>
+                    <>
+                        <Text style={[styles.textStart, { fontSize: 25 }]}>{minute > 0 ? "0" + minute : "00"}:{second > 0 ? (second > 9 ? second : "0" + second) : "00"}</Text>
+                        <View style={styles.viewTextStart}>
+                            <LargerNumberGame />
+                        </View>
+                    </>
 
                     :
 
@@ -36,7 +63,7 @@ const GamesScreen = () => {
                         />
                         <TouchableWithoutFeedback onPress={() => setStartGame(true)}>
                             <View style={[styles.viewTextStart, { flex: 1, justifyContent: 'center', }]}>
-                                <Text style={styles.textStart}>Start</Text>
+                                <Text style={[styles.textStart, { fontSize: 40 }]}>Start</Text>
                             </View>
                         </TouchableWithoutFeedback>
                     </>
@@ -56,10 +83,9 @@ const styles = StyleSheet.create({
     },
     textStart: {
         fontFamily: "Mplus1-Bold",
-        fontSize: 40,
         color: 'black',
         letterSpacing: -1,
-        textAlign: 'center'
+        textAlign: 'center',
     },
 
 })
