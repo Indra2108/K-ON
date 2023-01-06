@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { StyleSheet, View, Text, TouchableWithoutFeedback, } from 'react-native';
 
 import { useRoute, useNavigation } from "@react-navigation/native";
@@ -7,34 +7,28 @@ import { TopHeader, MainHeader } from "../../components";
 import LargerNumberGame from "../../assets/games_components/01.Larger_Number";
 
 const GamesScreen = () => {
-    const { title, desc } = useRoute().params
-    const navigation = useNavigation()
     const [startGame, setStartGame] = useState(false)
     const [time, setTime] = useState(5)
+    const { title, desc } = useRoute().params
+    const navigation = useNavigation()
     const minute = Math.floor(time % 3600 / 60)
     const second = Math.floor(time % 3600 % 60)
-    const timerRef = useRef(time)
 
     useEffect(() => {
         if (startGame) {
             const timerId = setInterval(() => {
-                timerRef.current -= 1
-                if (timerRef.current < 0) {
-                    clearInterval(timerId)
-                } else {
-                    setTime(timerRef.current)
-                }
-
-                if (timerRef.current < 0) {
-                    navigation.replace('ResultScreen')
-                }
-                console.log('TimeREF: ',timerRef.current);
-                console.log('time: ',time);
+                setTime(second - 1)
             }, 1000);
-        }
 
-        // return () => clearInterval(timerId)
-    }, [startGame])
+            if (second < 0) {
+                clearInterval(timerId)
+                navigation.replace('ResultScreen', { title }) // navigation.replace('ResultScreen', { title: title })
+            }
+
+            console.log('time: ', time)
+            return () => clearInterval(timerId)
+        }
+    }, [time, startGame])
 
     return (
         <View style={styles.container}>
