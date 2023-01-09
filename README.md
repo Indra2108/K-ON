@@ -1,7 +1,7 @@
 <p align="center"><img src="https://cdn.statically.io/gh/Indra2108/cdn/main/play_store_feature_graphic.png" /></p>
 
 # K-ON
-> *'K' stands for 'Konsentrasi' (Concentration in english). K-ON = Konsentrasi On*
+> *K* stands for *Konsentrasi* (*Concentration* in english). K-ON = Konsentrasi On.
 
 A brain training app clone based from [nixGames's Concentration training](https://play.google.com/store/apps/details?id=com.nixgames.concentration&hl=en&gl=US)
 
@@ -10,7 +10,6 @@ A brain training app clone based from [nixGames's Concentration training](https:
 - [ ] Add more games
 - [ ] Unlock all games without collecting stars
 - [ ] Implement Dark & Light Mode
-- [ ] About screen
 - [ ] Responsive screen
 - [ ] Interactive Animation
 
