@@ -5514,10 +5514,23 @@ react-native-codegen@^0.70.6:
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
 
+react-native-flash-message@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-flash-message/-/react-native-flash-message-0.4.0.tgz#22781a8d3c4d12498fb5ff778efeda2044cf6040"
+  integrity sha512-ZCVnQj+82cQnWqBtkIVPxMEJxwzWqq8WQcIulUqc9UiCdvWQJRLN0Pe0PvzFs/l/GM2ek6zXSck7LJzUq8pahQ==
+  dependencies:
+    prop-types "^15.8.1"
+    react-native-iphone-screen-helper "^2.0.2"
+
 react-native-gradle-plugin@^0.70.3:
   version "0.70.3"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz#cbcf0619cbfbddaa9128701aa2d7b4145f9c4fc8"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
+
+react-native-iphone-screen-helper@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-iphone-screen-helper/-/react-native-iphone-screen-helper-2.0.2.tgz#cc2c3891d66f21dc114c74e4a7917b327fe39464"
+  integrity sha512-Xn33CjStC7jJnM2vB8FrUTky/3C6BvzzHdRsiaEnVqurXMbrH5FPL6sXdb501q5uK9ocK92Dcm1dv6eNDA3P3Q==
 
 react-native-safe-area-context@^4.4.1:
   version "4.4.1"
@@ -5536,11 +5549,6 @@ react-native-system-navigation-bar@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-native-system-navigation-bar/-/react-native-system-navigation-bar-2.1.0.tgz#dc054e5107cda400935eb8d376afe6cc5d215089"
   integrity sha512-n/0wKeryPDVnxopyjuF4ine9ZWAr1jJFv5KL+PhK09AvHdqVirNQV6RXZKbkJeXNpRsCQCI6sPV2SiqlfU4QBg==
-
-react-native-toast-message@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/react-native-toast-message/-/react-native-toast-message-2.1.5.tgz#550acb9c6c0f1ee49c6b57b65a56d34e297eb723"
-  integrity sha512-mk3rELtBEhrhWBCN6CTaw0gypgL9ZNauX3xx1LUs4uee9vc0pVsghrKxO57vroUCcNL2hDeZSLJWdQNMCkGeaQ==
 
 react-native-vector-icons@^9.2.0:
   version "9.2.0"
