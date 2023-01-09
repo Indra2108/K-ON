@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text } from 'react-native';
 
 import Icon from "react-native-vector-icons/EvilIcons";
-import Toast from 'react-native-toast-message';
+import { showMessage } from "react-native-flash-message";
 
 import styles from "./styles";
 
@@ -13,8 +13,10 @@ const ListSettings = (props) => {
         switch (action) {
             case 'plus':
                 if (seconds >= 300) {
-                    Toast.show({
-                        text1: 'Maximum round length is 5 minutes.',
+                    showMessage({
+                        message: 'Maximum round length is 5 minutes.',
+                        backgroundColor: "black",
+                        color: '#fbfaf5', // text color
                     });
                 } else {
                     setSeconds(seconds + 10)
@@ -22,8 +24,10 @@ const ListSettings = (props) => {
                 break;
             case 'minus':
                 if (seconds <= 50) {
-                    Toast.show({
-                        text1: 'Minimum round length is 50 seconds.',
+                    showMessage({
+                        message: 'Minimum round length is 50 seconds.',
+                        backgroundColor: "black", // background color
+                        color: '#fbfaf5', // text color
                     });
                 } else {
                     setSeconds(seconds - 10)

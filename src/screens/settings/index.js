@@ -1,9 +1,9 @@
 import React from "react";
 import { View, StyleSheet } from 'react-native';
 
-import Toast from 'react-native-toast-message';
+import FlashMessage from "react-native-flash-message";
 
-import { ListSettings, MainHeader, toastConfig, TopHeader } from "../../components";
+import { ListSettings, MainHeader, TopHeader } from "../../components";
 
 const SettingScreen = () => {
     return (
@@ -20,12 +20,9 @@ const SettingScreen = () => {
 
             <ListSettings title='About' />
 
-            <Toast
-                config={toastConfig}
-                type='myToast'
-                position='bottom'
-                visibilityTime={1000}
-                bottomOffset={0}
+            <FlashMessage
+                position="bottom"
+                hideOnPress={false}
             />
         </View>
     )
