@@ -1,9 +1,24 @@
-<p align="center"><img src="https://cdn.statically.io/gh/Indra2108/cdn/main/play_store_feature_graphic.png" /></p>
+<p align="center"><img src="https://cdn.statically.io/gh/Indra2108/cdn/main/%5BPortfolio%5D%20K-ON/play_store_feature_graphic.png" /></p>
 
 # K-ON
 > *K* stands for *Konsentrasi* (*Concentration* in english). K-ON = Konsentrasi On.
 
 A brain training app clone based from [nixGames's Concentration training](https://play.google.com/store/apps/details?id=com.nixgames.concentration&hl=en&gl=US)
+
+### Screenshot
+---
+<div class="kontainer">
+ <img src='https://cdn.statically.io/gh/Indra2108/cdn/main/%5BPortfolio%5D%20K-ON/1.png' />
+ <img src='https://cdn.statically.io/gh/Indra2108/cdn/main/%5BPortfolio%5D%20K-ON/2.png' />
+ <img src='https://cdn.statically.io/gh/Indra2108/cdn/main/%5BPortfolio%5D%20K-ON/3.png' />
+</div>
+
+<style>
+.kontainer {
+  display: flex;
+  flex-direction: row;
+ }
+</style>
 
 ### Todo(s)
 ---
