@@ -7,18 +7,9 @@ A brain training app clone based from [nixGames's Concentration training](https:
 
 ### Screenshot
 ---
-<div class="kontainer">
  <img src='https://cdn.statically.io/gh/Indra2108/cdn/main/%5BPortfolio%5D%20K-ON/1.png' />
  <img src='https://cdn.statically.io/gh/Indra2108/cdn/main/%5BPortfolio%5D%20K-ON/2.png' />
  <img src='https://cdn.statically.io/gh/Indra2108/cdn/main/%5BPortfolio%5D%20K-ON/3.png' />
-</div>
-
-<style>
-.kontainer {
-  display: flex;
-  flex-direction: row;
- }
-</style>
 
 ### Todo(s)
 ---
