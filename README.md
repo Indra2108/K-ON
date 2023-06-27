@@ -17,6 +17,7 @@ A brain training app clone based from [nixGames's Concentration training](https:
 .kontainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap
  }
 </style>
 
